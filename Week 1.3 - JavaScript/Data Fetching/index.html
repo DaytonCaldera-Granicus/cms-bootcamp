@@ -18,10 +18,9 @@
 			const moviesContainer = document.querySelector('.movies');
 			movies.forEach(movie => {
 				const listItem = document.createElement('li');
-				listItem.innerHTML = `${movie.title}`;
+				listItem.innerHTML = movie.title;
 				moviesContainer.appendChild(listItem);
 			});
-			moviesContainer.appendChild(list);
 		});
 
 	</script>
