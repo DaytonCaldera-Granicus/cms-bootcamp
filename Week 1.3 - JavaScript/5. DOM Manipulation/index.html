@@ -24,6 +24,9 @@
 
 	<script>
 		// Add you code here
+		const scriptTemplate = document.querySelector('script[type="text/template"]');
+		const container = document.querySelector('.container');
+		container.innerHTML += scriptTemplate.textContent;
 	</script>
 
 </body>
