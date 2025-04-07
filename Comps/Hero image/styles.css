@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero {
+    width: 100vw;
+    height: 85vh;
+    overflow: hidden;
+    position: relative;
+    aspect-ratio: 16/9;
+}
+
+.hero picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero>span {
+    width: 100%;
+    position: absolute;
+    border-bottom: 10px dotted #FFBF25;
+    bottom: 5px;
+    left: 0;
+}
+
+.hero .text-content {
+    width: 33em;
+    position: absolute;
+    bottom: 40px;
+    left: 35px;
+    color: white;
+}
+
+.hero .text-content h2 {
+    line-height: 35px;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.hero .text-content p {
+    line-height: 22px;
+    margin: 10px auto;
+}
+
+.hero .text-content a {
+    color:white;
+    font-weight: 900;
+    text-decoration: none;
+    line-height: 20px;
+}
+.hero .text-content a span {
+    font-family: sans-serif;
+    font-weight: bold;
+    color:#2877F7;
+}
+
+@media (max-width:530px) {
+    .hero{
+        height: 55vh;
+    }
+    .hero .text-content {
+        width: 85%;
+        bottom: 25px;
+        left: 20px;
+    }
+    .hero>span {
+        border-bottom: 7px dotted #FFBF25;
+    }
+    .hero .text-content h5 {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+    .hero .text-content h2 {
+        font-size: 22px;
+        line-height: 22px;
+    }
+    .hero .text-content p {
+        font-size: 14px;
+        line-height: 14px;
+    }
+        
+}
