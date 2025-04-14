@@ -9,9 +9,11 @@ body {
 }
 
 header {
-    border-bottom: 1px solid #777;
-    margin: 0px 20px;
-    padding: 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 10px;
+    margin: 20px 100px;
+    width: 100%;
 }
 
 .container {
@@ -64,6 +66,7 @@ header {
     width: 100%;
     height: auto;
     object-fit: cover;
+    aspect-ratio: 16/9;
 }
 
 .card>.image-wrapper>.sponsored-label {
@@ -85,6 +88,10 @@ header {
     margin-top: auto;
     display: flex;
     flex-direction: column;
+}
+
+.card>.text-content>h5, .card>.text-content>h2 {
+    color: #484848;
 }
 
 .card>.text-content>h5 {
@@ -109,9 +116,9 @@ header {
 .card>.text-content>a {
     background-color: transparent;
     color: #007BFF;
-    padding: 10px 30px;
+    padding: 15px 30px;
     margin-top: auto;
-    border: 2px solid #007BFF;
+    border: 2px solid #2877F7;
     border-radius: 25px;
     font-size: .80rem;
     width: max-content;
@@ -138,6 +145,10 @@ header {
 
     .card>.text-content>a {
         margin-top: auto;
+    }
+
+    .card>.image-wrapper>picture>img{
+        aspect-ratio: 4/3;
     }
 
 }
