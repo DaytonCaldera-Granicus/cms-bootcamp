@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: #484848;
+    box-sizing: border-box;
+}
+
+header {
+    font-weight: 700;
+    border-bottom: 1px solid #E8E8E8;
+    padding: 10px;
+    margin: 20px 100px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    max-width: calc(1160px + 60px);
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.card .image-wrapper {
+    display: flex;
+    align-content: center;
+    margin-bottom: 10px;
+    max-width: 575px;
+    width: 100%;
+}
+
+.card .image-wrapper img {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.card .text-content {
+    padding: 0 15px;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.card .text-content h5,
+.card .text-content h2,
+.card .text-content h4,
+.card .text-content p {
+    margin-bottom: 10px;
+}
+
+.card .text-content h5 {
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.card .text-content h2 {
+    font-size: 26px;
+    font-weight: 900;
+}
+
+.card .text-content h4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.card .text-content h4 i,
+.card .text-content a i {
+    color: #2877F7;
+}
+
+.card .text-content p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.card .text-content a {
+    margin-top: 15px;
+    font-weight: 900;
+    text-decoration: none;
+    line-height: 20px;
+}
+
+.glide__track {
+    max-width: calc(1160px - 45px);
+    margin: 0 60px;
+    width: 100%;
+
+}
+
+.glide__arrows {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    top: 25%;
+}
+
+.glide__arrow {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #2877F7;
+    border: none;
+    font-size: 20px;
+    font-weight: 900;
+    left: 10px;
+    right: 10px;
+}
+
+.glide__arrow i {
+    color: #FFCE58 !important;
+}
+
+@media (max-width: 800px) {
+    .cards {
+        width: 85%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 640px){
+    .cards {
+        width: 89.5%;
+        flex-direction: column;
+    }
+
+    .glide__track {
+        margin: 0;
+        width: 100%;
+    }
+
+    .glide__arrows {
+        position: relative;
+        justify-content: center;
+        gap: 30px;
+    }
+    .card .image-wrapper{
+        width: 100%;
+    }
+}
