@@ -64,6 +64,7 @@ body {
 @media (max-width:530px) {
     .hero{
         height: 55vh;
+        aspect-ratio: 4/3;
     }
     .hero .text-content {
         width: 85%;
