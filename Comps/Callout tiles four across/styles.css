@@ -15,18 +15,22 @@ header {
 }
 
 .tiles {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4,  1fr);
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     margin: auto;
+    padding: 0 30px;
+    width: 100%;
+    max-width: 1440px;
 }
 
 .tile {
     border-radius: 270px;
     overflow: hidden;
     position: relative;
-    width: 323px;
+    /* width: 323px; */
     aspect-ratio: 9/16;
 }
 
@@ -38,10 +42,11 @@ header {
     width: 100%;
     text-align: center;
     font-weight: 900;
-    font-size: 1.2em;
+    font-size: 1.05em;
     font-family: "Montserrat", sans-serif;
     color: #fff;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    text-transform: uppercase;
 }
 
 .tile-image {
@@ -50,13 +55,18 @@ header {
     object-fit: cover;
 }
 
-@media (max-width: 1024px) {
-    
-}
-
-@media (max-width: 376px) {
+@media (max-width: 1025px) {
+    .tiles{
+        grid-template-columns: repeat(2,1fr);
+    }
     .tile {
         aspect-ratio: 16/9;
+    }
+}
+
+@media (max-width: 600px) {
+    .tiles{
+        grid-template-columns: repeat(1,1fr);
     }
     .tile-text {
         width: 50%;
